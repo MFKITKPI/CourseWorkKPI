@@ -1,0 +1,33 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    authentication:
+      path: /auth/**
+      url: authentication
+      stripPrefix: true
+      sensitiveHeaders:
+
+    search:
+      path: /search/**
+      url: search
+      stripPrefix: true
+      sensitiveHeaders:
+
+    orderserv:
+      path: /order/**
+      url: orderserv
+      stripPrefix: false
+      sensitiveHeaders:
+
+    feedback:
+      path: /feedback/**
+      url: feedback
+      stripPrefix: false
+      sensitiveHeaders:
+
+server:
+  port: 8080

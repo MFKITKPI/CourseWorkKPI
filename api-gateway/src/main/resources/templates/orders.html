@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Food delivery (Orders)</title>
+    <link rel="shortcut icon" href="icon/food.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css"
+          href="css/stylesheet.css"/>
+</head>
+<body>
+<a href="/" class="topLine"></a>
+<div class="topLine">
+    <div id="forlogregbut"></div>
+    <div id="forreglogform"></div>
+    <a class="sidebut" id="mainpage" href="/">Main</a>
+    <a class="sidebut" id="orderpage" style="outline: 1px solid black" href="/orders">Orders</a>
+    <a class="sidebut" id="adminpage" href="/admin">Admin</a>
+</div>
+
+<div style="padding-left: 80px">
+    <div>Your orders:</div>
+    <div id="multiContainer">
+
+    </div>
+    <div id="forFeedback">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/orders.js"></script>
+<script type="text/javascript" src="js/commonFunctions.js"></script>
+</body>
+</html>

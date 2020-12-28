@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+}
+
+a.topLine {
+    position: absolute;
+    height: 100vh;
+    width: 70px;
+}
+
+div.topLine {
+    position: absolute;
+    height: 100vh;
+    width: 70px;
+    background: linear-gradient(to top, lawngreen, darkgreen);
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+
+div.logRegButs, form.logRegButs {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    outline: none;
+}
+
+.logRegButs button, .logRegButs input {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 19px;
+    margin-top: 4px;
+    background: linear-gradient(to bottom left, black, darkgreen);
+    font: 12px serif;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.logRegButs label {
+    font: 18px serif;
+    width: 100%;
+}
+
+.logRegButs button:hover, .logRegButs input:hover {
+    background: black;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+form.logRegForm {
+    margin-top: 50px;
+    display: block;
+    height: auto;
+    width: 30vw;
+    background-color: darkgreen;
+}
+
+.logRegForm input, .logRegForm button {
+    width: calc(100% - 2vw);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    background-color: wheat;
+    margin-top: 5px;
+}
+
+.cancelPerfButs:hover {
+    background-color: darkolivegreen;
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+.sidebut {
+    width: 100%;
+    height: 70px;
+    color: white;
+    background: linear-gradient(to bottom left, lightgreen, darkgreen);
+    text-align: center;
+    line-height: 70px;
+    display: block;
+}
+
+.sidebut:hover {
+    background: linear-gradient(to bottom left, green, black);
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+#searchForm {
+    margin: 0 auto;
+    font: 18px serif;
+    display: block;
+    width: 90%;
+}
+
+#searchForm input {
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5px;
+    outline: 0;
+}
+
+div.foodBlock {
+    border-bottom: 3px double black;
+    width: 100%;
+}
+
+.foodBlock div, input {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#newFood div {
+    display: inline-block;
+}
